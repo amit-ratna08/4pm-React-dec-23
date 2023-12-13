@@ -1,12 +1,14 @@
 import React from 'react'
-import ControllCompo from './ControlCOMPONENT/ControllCompo'
-import UnControllCompo from './ControlCOMPONENT/UnControllCompo'
+import OnClickCompo from './Hoc/OnClickCompo'
+import OnmouseCompo from './Hoc/OnmouseCompo'
+import OnKeyCompo from './Hoc/OnKeyCompo'
 
 const App = () => {
   return (
     <div>
-      {/* <ControllCompo /> */}
-      <UnControllCompo />
+      <OnClickCompo />
+      <OnmouseCompo />
+      <OnKeyCompo />
     </div>
   )
 }
