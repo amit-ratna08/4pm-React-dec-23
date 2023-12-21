@@ -1,14 +1,18 @@
 import React from 'react'
-import OnClickCompo from './Hoc/OnClickCompo'
-import OnmouseCompo from './Hoc/OnmouseCompo'
-import OnKeyCompo from './Hoc/OnKeyCompo'
+import './App.css'
+
+import { IncreNumber,DecreNumber } from './action/Index'
+import { useDispatch, useSelector } from 'react-redux'
 
 const App = () => {
+    const mystate=useSelector((state)=>state.changeState)
+
+    const dispatch=useDispatch()
   return (
-    <div>
-      <OnClickCompo />
-      <OnmouseCompo />
-      <OnKeyCompo />
+    <div className='main'>
+      <button className='btn' onClick={()=>dispatch(IncreNumber())} >+</button>
+      <input type='text' className='inputtype' value={mystate} />
+      <button className='btn' onClick={()=>dispatch(DecreNumber())}>-</button>
     </div>
   )
 }

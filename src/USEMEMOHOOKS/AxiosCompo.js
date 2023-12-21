@@ -16,7 +16,7 @@ const AxiosCompo = () => {
   return (
     <div>
       {
-        userdata.map((data)=>{
+        userdata.map((data)=>{ 
             return(
                 < div className='para'>
                 {data.name} <br />

@@ -7,6 +7,23 @@
 }
 
 /* self styling */
+/* redux */
+.main{
+  text-align: center;
+  margin-top: 150px;
+}
+.btn{
+  padding: 21px;
+  border: 2px solid black;
+  margin: 2px;
+
+}
+.inputtype{
+  padding: 20px;
+  width: 60px;
+  text-align: center;
+}
+
 
 .head{
   display: flex;
